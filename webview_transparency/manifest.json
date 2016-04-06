@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Webview transparency",
+  "version": "1",
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "permissions": [
+    "webview"
+  ],
+  "webview": {
+    "partitions": [
+      {
+        "name": "partition",
+        "accessible_resources": [ "dragon.html", "demos.js", "dragon.js", "test2.html" ]
+      }
+    ]
+  }
+}
